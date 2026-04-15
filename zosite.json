@@ -1,0 +1,15 @@
+{
+  "name": "box-app",
+  "local_port": 50439,
+  "entrypoint": "bun run dev",
+  "publish": {
+    "label": "box-app",
+    "type": "http",
+    "entrypoint": "bun run prod",
+    "published_port": 54004,
+    "env": {
+      "NODE_ENV": "production",
+      "ZO_CLIENT_IDENTITY_TOKEN": "none"
+    }
+  }
+}
