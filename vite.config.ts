@@ -15,6 +15,9 @@ export default defineConfig({
     strictPort: true,
     hmr: false,
   },
+  preview: {
+    allowedHosts: ["p1.proxy.zo.computer"],
+  },
   build: {
     outDir: "dist",
     emptyOutDir: true,
